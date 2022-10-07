@@ -1,0 +1,229 @@
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+    /* contact */
+
+    .contact_email .col-12:first-child {
+        margin-bottom: 20px;
+    }
+    .contact_email span {
+        font-size: 14px;
+    }
+    .contact_email input {
+        width: 177px;
+    }
+
+    /* slide */
+
+    #slide {
+        height: 400px;
+        margin-top: 64px;
+    }
+    #slide img {
+        object-fit: unset;
+    }
+
+    /* slide-logo */
+
+    #slide-logo {
+        height: 50px;
+    }
+    #slide-logo .img-slide-logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    /* restaurant */
+
+    .restaurant .col-12 {
+        margin-bottom: 40px;
+    }
+    .restaurant .col-12:last-child {
+        margin: 0;
+    }
+
+    /* menu_home */
+
+    .menu_home .top {
+        margin-bottom: 20px;
+    }
+
+    /* Korea */
+
+    #korea .row:first-child {
+        margin-bottom: 20px;
+        height: auto;
+        overflow: hidden;
+    }
+    #korea .row .col-12 {
+        margin-bottom: 20px;
+    }
+    #korea .row .col-6 {
+        margin-bottom: 20px;
+    }
+    #korea .col-lg-6.col-12 img {
+        height: 300px;
+    }
+
+    /* sunhomes */
+
+    .sunhomes {
+        margin-top: 20px;
+    }
+    .sunhomes .img-hover {
+        width: 100%;
+        height: 450px;
+        margin-top: 20px;
+    }
+    .sunhomes button {
+        bottom: 70px;
+        padding: 10px 15px;
+    }
+
+    /* header */
+
+    header .logo-mobile i {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    .navbar .nav-menu {
+        display: none;
+    }
+    .navbar .nav-img img {
+        width: 190px;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    /* footer */
+
+    #footer .flex {
+        display: unset;
+    }
+    #footer .footer-content {
+        display: none;
+    }
+    #footer .logo-footer {
+        padding-top: 20px;
+    }
+    #footer .logo-footer p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #footer .logo-footer .logo-footer_img {
+        display: flex;
+    }
+    #footer .logo-footer .logo-footer_img img {
+        margin: auto;
+    }
+    .web-bg {
+        margin-top: 64px;
+    }
+
+    /* about */
+    .about-main .row .col-lg-6:first-child {
+        margin-bottom: 30px;
+    }
+
+    /* menu.html */
+    .menu-extra-content img {
+        height: 250px;
+    }
+
+    /* contact.html */
+    .contact .col-lg-6:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 565px) and (max-width: 767px) {
+    .contact_email input {
+        width: 270px;
+    }
+    .contact_email span {
+        font-size: 16px;
+    }
+    #slide-logo .img-slide-logo {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    /* header */
+
+    header .logo-mobile i {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .navbar .nav-menu {
+        display: none;
+    }
+
+    /* restaurant */
+
+    .restaurant .col-lg-6.col-12:first-child {
+        margin-bottom: 30px;
+    }
+
+    /* contact */
+
+    .contact_email .col-12:first-child {
+        margin-bottom: 20px;
+    }
+    .contact_email input {
+        width: 300px;
+    }
+
+    /* korea */
+
+    #korea .row:first-child {
+        margin-bottom: 20px;
+        height: auto;
+        overflow: hidden;
+    }
+    #korea .row:first-child img {
+        height: 450px;
+    }
+    #korea .row .col-6 {
+        margin-bottom: 20px;
+    }
+
+    /* slide-logo */
+    #slide-logo {
+        height: 50px;
+    }
+    #slide-logo .img-slide-logo {
+        width: 120px;
+        height: 40px;
+    }
+    #slide {
+        height: 400px;
+    }
+    .about-main .row .col-lg-6:first-child {
+        margin-bottom: 30px;
+    }
+    /* contact.html */
+    .contact .col-lg-6:first-child {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1200px) {
+    .contact_email input {
+        width: 280px;
+    }
+    header .nav-img img {
+        width: 200px !important;
+    }
+    #slide {
+        margin-top: 66px;
+    }
+    .web-bg {
+        margin-top: 64px;
+    }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="responsive.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css" />
+    </head>
+    <body>
+        <!-- Header -->
+
+        <header id="header">
+            <div class="navbar">
+                <div class="logo-mobile">
+                    <i class="fas fa-align-justify" onclick="mobile()"></i>
+                </div>
+                <div class="nav-img">
+                    <a href="#">
+                        <img src="img/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="modal-mobile" onclick="modalClick()"></div>
+                <div class="menu-mobile">
+                    <div class="hotline">
+                        <span>Hotline: 087677322</span>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Đặt bàn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Thực đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recruitment.html"
+                                >Tuyển dụng</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="order.html"
+                                >Đặt bàn</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Thực đơn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recruitment.html"
+                                >Tuyển dụng</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item flex">
+                            <span>Hotline: 087677322</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- backgroud -->
+        <div class="web-bg">
+            <img src="img/bg-table.jpg" alt="" />
+        </div>
+
+        <!-- order-main -->
+        <div id="order" class="order-main">
+            <div class="container">
+                <div class="row" style="padding-top: 30px">
+                    <div class="col-lg-6">
+                        <h2>Set Table</h2>
+                        <p>
+                            Quý khách vui lòng đặt bàn trước để có trải nghiệm
+                            thưởng thức ẩm thực tốt nhất tại Sun Homes BBQ.
+                        </p>
+                        <span>Gợi ý đặt bàn:</span>
+
+                        <ul>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> Đi 1 người:
+                                đặt bàn đơn
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> Đi 2 người:
+                                đặt bàn đôi
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> Đi nhóm 4-6
+                                người: đặt bàn 6 người.
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> Đi nhóm
+                                6-12 người: đặt bàn dài
+                            </li>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> Đi nhóm >12
+                                người: gọi trực tiếp Hotline: 0909.009.009
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <form method="POST" action="">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Tên của bạn..."
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Số điện thoại..."
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="number"
+                                    min="1"
+                                    class="form-control"
+                                    placeholder="Số người ăn..."
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    placeholder=""
+                                />
+                            </div>
+                            <div class="time-order">
+                                <div class="row">
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="08:00"
+                                        />
+                                        <span>08:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="08:30"
+                                        />
+                                        <span>08:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="09:00"
+                                        />
+                                        <span>09:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="09:30"
+                                        />
+                                        <span>09:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="10:00"
+                                        />
+                                        <span>10:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="10:30"
+                                        />
+                                        <span>10:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="11:00"
+                                        />
+                                        <span>11:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="11:30"
+                                        />
+                                        <span>11:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="12:00"
+                                        />
+                                        <span>12:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="12:30"
+                                        />
+                                        <span>12:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="13:00"
+                                        />
+                                        <span>13:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="13:30"
+                                        />
+                                        <span>13:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="14:00"
+                                        />
+                                        <span>14:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="14:30"
+                                        />
+                                        <span>14:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="15:00"
+                                        />
+                                        <span>15:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="15:30"
+                                        />
+                                        <span>15:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="16:00"
+                                        />
+                                        <span>16:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="16:30"
+                                        />
+                                        <span>16:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="17:00"
+                                        />
+                                        <span>17:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="17:30"
+                                        />
+                                        <span>17:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="18:00"
+                                        />
+                                        <span>18:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="18:30"
+                                        />
+                                        <span>18:30</span>
+                                    </div>
+
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="19:00"
+                                        />
+                                        <span>19:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="19:30"
+                                        />
+                                        <span>19:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="20:00"
+                                        />
+                                        <span>20:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="20:30"
+                                        />
+                                        <span>20:30</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="21:00"
+                                        />
+                                        <span>21:00</span>
+                                    </div>
+                                    <div class="col-3 col-lg-2 col-sm-3 flex">
+                                        <input
+                                            type="checkbox"
+                                            name="time-check"
+                                            value="21:30"
+                                        />
+                                        <span>21:30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning">
+                                ĐẶT BÀN
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="flex">
+                    <div class="footer-content">
+                        <span>Công ty TNHH Thương Mại và Dịch Vụ Tuấn Anh</span>
+                        <p>
+                            Trụ sở chính: Tầng 2A, Tòa 27A3 Greenstars 234 Phạm
+                            Văn Đồng, Bắc Từ Liêm, Hà Nội
+                        </p>
+                        <p>GPĐK: Số 0102957334 cấp ngày 09/04/2008</p>
+                        <p>ĐT: 0343705086 Email: andyndd12@gmail.com</p>
+                    </div>
+                    <div class="logo-footer">
+                        <p>© 2011 Tuan Anh Media ., JSC. All rights reserved</p>
+                        <div class="logo-footer_img">
+                            <img src="img/logo-footer.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
